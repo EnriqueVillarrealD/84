@@ -1,34 +1,94 @@
+/* Fondo general */
 body {
-  font-family: Arial, sans-serif;
-  background-color: #f2f2f2;
-  padding: 20px;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background-color: #ffffff;
+  margin: 0;
+  padding: 0;
 }
 
-form {
-  background-color: #fff;
-  padding: 20px;
-  border-radius: 5px;
-  max-width: 500px;
-  margin: auto;
+/* Contenedor del formulario */
+.formulario {
+  background-color: #f7f2f8; /* rosita/lila muy suave */
+  max-width: 600px;
+  margin: 30px auto;
+  padding: 35px;
+  border-radius: 20px;
+  border-left: 10px solid #e8dbe6;
+  border-right: 10px solid #e8dbe6;
+  box-shadow: 0 0 15px rgba(16, 38, 84, 0.1);
 }
 
+/* Título */
+h2 {
+  color: #102654; /* azul marino fuerte */
+  text-align: center;
+  margin-bottom: 25px;
+  font-size: 24px;
+}
+
+/* Etiquetas */
 label {
   display: block;
-  margin-top: 10px;
+  margin-top: 20px;
+  font-weight: 600;
+  color: #102654;
+  font-size: 15px;
 }
 
-input, textarea {
+/* Campos */
+input,
+select,
+textarea {
   width: 100%;
-  padding: 8px;
-  margin-top: 5px;
+  padding: 12px;
+  margin-top: 6px;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  font-size: 15px;
+  background-color: #ffffff;
   box-sizing: border-box;
+  transition: border-color 0.3s ease;
 }
 
+input:focus,
+select:focus,
+textarea:focus {
+  border-color: #c59ac3; /* rosa suave */
+  outline: none;
+}
+
+/* Botón */
 button {
-  margin-top: 15px;
-  padding: 10px 15px;
-  background-color: #4CAF50;
+  margin-top: 30px;
+  width: 100%;
+  padding: 12px;
+  background-color: #102654; /* azul marino */
   color: white;
   border: none;
-  border-radius: 3px;
+  border-radius: 6px;
+  font-size: 17px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+button:hover {
+  background-color: #0c1e42;
+}
+
+/* Imágenes centradas */
+img {
+  display: block;
+  margin: 20px auto;
+  border-radius: 10px;
+  max-width: 100%;
+  box-shadow: 0 0 6px rgba(0, 0, 0, 0.05);
+}
+
+/* Responsive */
+@media (max-width: 600px) {
+  .formulario {
+    margin: 15px;
+    padding: 25px;
+  }
 }
