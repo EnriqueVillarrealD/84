@@ -7,15 +7,17 @@
   <link rel="stylesheet" href="estilos.css" />
 </head>
 <body>
-<!-- IMAGEN 1: ENCABEZADO -->
-<div style="text-align: center;">
-  <img src="enrique-portada.jpg" alt="Enrique Villarreal" style="width: 100%; max-width: 600px; height: auto;">
-</div>
+
+  <!-- IMAGEN 1: ENCABEZADO -->
+  <div style="text-align: center;">
+    <img src="enrique-portada.jpg" alt="Enrique Villarreal" style="width: 100%; max-width: 600px; height: auto;" />
+  </div>
 
   <div class="formulario">
-    <h2>Regístrate como parte de mi Red de Apoyo</h2>
+    <h2>Regístrate como parte de la Red de Apoyo</h2>
 
-    <form action="https://formspree.io/f/xeogezvn" method="POST" onsubmit="return mostrarConfirmacion();">
+    <form action="https://script.google.com/macros/s/AKfycbwtaaJnJEKsdEiP351hPhMrT6ym0ZvVR8JbkXZ--53unjghbSSQ4uMpsEH-zKafnxkKVA/exec" method="POST" onsubmit="return mostrarConfirmacion();">
+
       <label for="nombre">Nombre completo:</label>
       <input type="text" id="nombre" name="nombre" required />
 
@@ -33,7 +35,7 @@
 
       <!-- IMAGEN 2: SECCIÓN ELECTORAL -->
       <div style="text-align: center;">
-        <img src="seccion-electoral.PNG" alt="Ubicación sección electoral" style="width:100%; max-width:400px; margin: 30px 0;" />
+        <img src="seccion-electoral.PNG" alt="Ubicación sección electoral" style="width: 100%; max-width: 600px; height: auto;" />
       </div>
 
       <label for="celular">Celular (10 dígitos):</label>
@@ -48,10 +50,9 @@
 
   <!-- IMAGEN 3: AGRADECIMIENTO -->
   <div style="text-align: center;">
-    <img src="gracias-apoyo.jpg" alt="Gracias por registrarte" style="width:100%; max-width:400px; margin: 40px auto;" />
+    <img src="gracias-apoyo.jpg" alt="Gracias por registrarte" style="width: 100%; max-width: 600px; margin: 40px auto;" />
   </div>
 
-  <!-- MENSAJE DE CONFIRMACIÓN -->
   <script>
     function mostrarConfirmacion() {
       alert("Tu registro está completo. Muchas gracias");
@@ -59,5 +60,6 @@
       return true;
     }
   </script>
+
 </body>
 </html>
