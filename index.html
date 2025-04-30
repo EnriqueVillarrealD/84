@@ -10,13 +10,13 @@
 
   <!-- IMAGEN 1: ENCABEZADO -->
   <div style="text-align: center;">
-    <img src="https://github.com/EnriqueVillarrealD/84/blob/main/Portada%20Enrique.JPG" alt="Enrique Villarreal" style="width:100%; max-width:400px; margin: 20px auto;">
+    <img src="enrique-villarreal.jpg.JPG" alt="Enrique Villarreal" style="width:100%; max-width:400px; margin: 20px auto;">
   </div>
 
   <div class="formulario">
     <h2>Regístrate como parte de la Red de Apoyo</h2>
 
-    <form action="https://formspree.io/f/xeogezvn" method="POST">
+    <form action="https://formspree.io/f/xeogezvn" method="POST" onsubmit="return mostrarConfirmacion();">
 
       <label for="nombre">Nombre Completo (Nombre - Apellido Paterno - Apellido Materno):</label>
       <input type="text" id="nombre" name="nombre" required>
@@ -35,13 +35,13 @@
 
       <!-- IMAGEN 2: SECCIÓN ELECTORAL -->
       <div style="text-align: center;">
-        <img src="https://github.com/EnriqueVillarrealD/84/blob/main/Sección%20Electoral.PNG" alt="Ubicación sección electoral" style="width:100%; max-width:400px; margin: 30px 0;">
+        <img src="seccion-electoral.jpg.PNG" alt="Ubicación sección electoral" style="width:100%; max-width:400px; margin: 30px 0;">
       </div>
 
-      <label for="celular">Celular (10 Digitos):</label>
+      <label for="celular">Celular (10 Dígitos):</label>
       <input type="tel" id="celular" name="celular" required>
 
-      <label for="referido">Nombre de quien te invito a apoyarme:</label>
+      <label for="referido">Nombre de quien te invitó a apoyarme:</label>
       <input type="text" id="referido" name="referido">
 
       <button type="submit">Enviar</button>
@@ -50,8 +50,16 @@
 
   <!-- IMAGEN 3: AGRADECIMIENTO -->
   <div style="text-align: center;">
-    <img src="https://github.com/EnriqueVillarrealD/84/blob/main/Agradecimiento.jpg" alt="Gracias por registrarte" style="width:100%; max-width:400px; margin: 40px auto;">
+    <img src="gracias-apoyo.jpg.jpg" alt="Gracias por registrarte" style="width:100%; max-width:400px; margin: 40px auto;">
   </div>
+
+  <!-- MENSAJE DE CONFIRMACIÓN -->
+  <script>
+    function mostrarConfirmacion() {
+      alert("¡Gracias por registrarte! Tu apoyo significa mucho para este proyecto.");
+      return true;
+    }
+  </script>
 
 </body>
 </html>
